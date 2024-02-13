@@ -1,16 +1,144 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Fashion Finesse Shop">
+  <meta name="keywords" content="Fashion Finesse Shop">
+  <meta name="author" content="Raghad">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dist/style.css">
-  <title>SCSS Project</title>
+  <!-- <link rel="stylesheet" href="dist/style.css"> -->
+  <title>Fashion Finesse Shop</title>
 </head>
 <body>
-  <header class="header">
-    <h1>Welcome to my SCSS Project</h1>
-  </header>
+<header id="header">
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <img src="Fashion Finesse Shop.png" width="200" height="200" alt="Fashion Finesse Shop logo">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#women">Women</a></li>
+      <li><a href="#men">Men</a></li>
+      <li><a href="#aboutUs">About us</a></li>
+      <li><a href="#contactUs">Contact us</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="hero-text">
+    <h1>Welcome to Fashion Finesse Shop &#128155;</h1>
+    <h2>Find your true style here</h2>
+    <button aria-describedby="Shop Now">Shop Now</button>
+    <br>
+    <hr>
+  </div>
+</main>
+<section id="Now Trending">
+  <h3>Now Trending</h3>
+    <div class="productCard">
+         <!-- first product  -->
+        <img src="Cotton Jeans.jpg" alt="Cotton Jeans" width = "100" height ="100">
+          <div class="containerProduct">
+            <p><b>Cotton Jeans</b></p>
+            <p>Wear them your way and make sure you bring your uniqueness to the fore.</p>
+            <p>$90.00</p>
+            <button aria-describedby="Add to Cart">Add to Cart</button>
+           </div>
+           <br>
+            <!-- second product  -->
+             <img src="White Wide Fit Oversize Tshirt.png" alt="White Wide Fit Oversize Tshirt"  width = "100" height ="100">
+             <div class="containerProduct">
+               <p><b>White Wide Fit Oversize Tshirt</b></p>
+                <p>this casual t-shirt is an absolute must-have for a big and tall man's wardrobe.</p>
+                <p>$70.00</p>
+                <button aria-describedby="Add to Cart">Add to Cart</button>
+              </div>
+              <br>
+            <!-- third product  -->
+              <img src="jeans high waist.jpg" alt="jeans high waist"  width = "100" height ="100">
+              <div class="containerProduct">
+                <p><b>jeans high waist</b></p>
+                 <p> Constructed in a nonstretch, soft denim, with an authentic vintage texture that becomes more unique with every wash</p>
+                 <p>$100.00</p>
+                 <button aria-describedby="Add to Cart">Add to Cart</button>
+                </div>
+               <br>
+                 <!-- fourth product  -->
+              <img src="blue Wide Fit Oversize Tshirt.png" alt="blue Wide Fit Oversize Tshirt" width = "100" height ="100">
+              <div class="containerProduct">
+                <p><b>blue Wide Fit Oversize Tshirt</b></p>
+                 <p>Oversized shirts are real streetwear icons, and this shirt comes across as quite simple and classic. Crewneck, wide fit, and overcut shoulders provide the casual fit.</p>
+                 <p>$60.00</p>
+                 <button aria-describedby="Add to Cart">Add to Cart</button>
+                </div>
+               <br>
+      </div>
+      <hr>
+      <br>
+    </section>
+    <!--testimonials  -->
+    <section id="testimonials">
+      <h4>customer testimonials</h4>
+      <div class="testimonial-box-container">
+          <!-- BOX1 -->
+        <div class="testimonial-box">
+              <div class="box-top">
+                  <div class="profile">
+                      <div class="profile">
+                          <img src="profile.png" alt="profile image"width = "60" height ="55">
+                      </div>
+                      <div class="name-user">
+                          <strong>rakan</strong>
+                          <p>@rakan11</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="customer-comment">
+                  <p>The Fashion Finesse shop is a hidden gem! They offer a wide range of trendy and fashionable clothing at affordable prices. I've purchased several items from them and have always been impressed with the quality and style.</p>
+              </div>
+          </div>
+          <!-- BOX2 -->
+          <div class="testimonial-box">
+              <div class="box-top">
+                  <div class="profile">
+                      <div class="profile-img">
+                          <img src="profile.png" alt="profile image" width = "60" height ="55">
+                      </div>
+                      <div class="name-user">
+                          <strong>rahaf</strong>
+                          <p>@rahaf22</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="customer-comment">
+                  <p>I love shopping at this online Fashion Finesse shop! The quality of their clothing is exceptional and their customer service is top-notch. Every time I place an order, it arrives on time and beautifully packaged. I highly recommend this shop to anyone looking for stylish and high-quality clothing.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <br>
+  
+       <!-- newsletter subscription -->
+        <form>
+          <label for="emails"> Enter email addresses:</label>
+          <input type="email" id="emails" name="emails" required autocomplete="email" autocapitalize="off" autocorrect="off"spellcheck="false"
+          type="text">
+          <input type="submit" value="Subscribe">
+        </form>
+        <br>
+        <hr>
+
+        <footer>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#women">Women</a></li>
+            <li><a href="#men">Men</a></li>
+            <li><a href="#aboutUs">About us</a></li>
+            <li><a href="#contactUs">Contact us</a></li>
+          </ul>
+          <br>
+          <a href ="https://twitter.com" target="-blank">
+          <img src = "twitter.png" alt="twitter logo" width = "30" height ="30"></a>
+          <a href ="https://www.linkedin.com" target="-blank">
+          <img src = "linkedin.png"  alt="linkedin logo"  width ="30" height ="30"></a>
+        </footer>
 </body>
 </html>
