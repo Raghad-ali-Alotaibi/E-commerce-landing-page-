@@ -1,144 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Fashion Finesse Shop">
-  <meta name="keywords" content="Fashion Finesse Shop">
-  <meta name="author" content="Raghad">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="dist/style.css"> -->
-  <title>Fashion Finesse Shop</title>
-</head>
-<body>
-<header id="header">
-  <nav id="navbar" role="navigation" aria-label="Main Navigation">
-    <img src="Fashion Finesse Shop.png" width="200" height="200" alt="Fashion Finesse Shop logo">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#women">Women</a></li>
-      <li><a href="#men">Men</a></li>
-      <li><a href="#aboutUs">About us</a></li>
-      <li><a href="#contactUs">Contact us</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <div class="hero-text">
-    <h1>Welcome to Fashion Finesse Shop &#128155;</h1>
-    <h2>Find your true style here</h2>
-    <button aria-describedby="Shop Now">Shop Now</button>
-    <br>
-    <hr>
-  </div>
-</main>
-<section id="Now Trending">
-  <h3>Now Trending</h3>
-    <div class="productCard">
-         <!-- first product  -->
-        <img src="Cotton Jeans.jpg" alt="Cotton Jeans" width = "100" height ="100">
-          <div class="containerProduct">
-            <p><b>Cotton Jeans</b></p>
-            <p>Wear them your way and make sure you bring your uniqueness to the fore.</p>
-            <p>$90.00</p>
-            <button aria-describedby="Add to Cart">Add to Cart</button>
-           </div>
-           <br>
-            <!-- second product  -->
-             <img src="White Wide Fit Oversize Tshirt.png" alt="White Wide Fit Oversize Tshirt"  width = "100" height ="100">
-             <div class="containerProduct">
-               <p><b>White Wide Fit Oversize Tshirt</b></p>
-                <p>this casual t-shirt is an absolute must-have for a big and tall man's wardrobe.</p>
-                <p>$70.00</p>
-                <button aria-describedby="Add to Cart">Add to Cart</button>
-              </div>
-              <br>
-            <!-- third product  -->
-              <img src="jeans high waist.jpg" alt="jeans high waist"  width = "100" height ="100">
-              <div class="containerProduct">
-                <p><b>jeans high waist</b></p>
-                 <p> Constructed in a nonstretch, soft denim, with an authentic vintage texture that becomes more unique with every wash</p>
-                 <p>$100.00</p>
-                 <button aria-describedby="Add to Cart">Add to Cart</button>
-                </div>
-               <br>
-                 <!-- fourth product  -->
-              <img src="blue Wide Fit Oversize Tshirt.png" alt="blue Wide Fit Oversize Tshirt" width = "100" height ="100">
-              <div class="containerProduct">
-                <p><b>blue Wide Fit Oversize Tshirt</b></p>
-                 <p>Oversized shirts are real streetwear icons, and this shirt comes across as quite simple and classic. Crewneck, wide fit, and overcut shoulders provide the casual fit.</p>
-                 <p>$60.00</p>
-                 <button aria-describedby="Add to Cart">Add to Cart</button>
-                </div>
-               <br>
-      </div>
-      <hr>
-      <br>
-    </section>
-    <!--testimonials  -->
-    <section id="testimonials">
-      <h4>customer testimonials</h4>
-      <div class="testimonial-box-container">
-          <!-- BOX1 -->
-        <div class="testimonial-box">
-              <div class="box-top">
-                  <div class="profile">
-                      <div class="profile">
-                          <img src="profile.png" alt="profile image"width = "60" height ="55">
-                      </div>
-                      <div class="name-user">
-                          <strong>rakan</strong>
-                          <p>@rakan11</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="customer-comment">
-                  <p>The Fashion Finesse shop is a hidden gem! They offer a wide range of trendy and fashionable clothing at affordable prices. I've purchased several items from them and have always been impressed with the quality and style.</p>
-              </div>
-          </div>
-          <!-- BOX2 -->
-          <div class="testimonial-box">
-              <div class="box-top">
-                  <div class="profile">
-                      <div class="profile-img">
-                          <img src="profile.png" alt="profile image" width = "60" height ="55">
-                      </div>
-                      <div class="name-user">
-                          <strong>rahaf</strong>
-                          <p>@rahaf22</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="customer-comment">
-                  <p>I love shopping at this online Fashion Finesse shop! The quality of their clothing is exceptional and their customer service is top-notch. Every time I place an order, it arrives on time and beautifully packaged. I highly recommend this shop to anyone looking for stylish and high-quality clothing.</p>
-              </div>
-          </div>
-      </div>
-  </section>
-  <br>
-  
-       <!-- newsletter subscription -->
-        <form>
-          <label for="emails"> Enter email addresses:</label>
-          <input type="email" id="emails" name="emails" required autocomplete="email" autocapitalize="off" autocorrect="off"spellcheck="false"
-          type="text">
-          <input type="submit" value="Subscribe">
-        </form>
-        <br>
-        <hr>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Fashion Finesse Shop" />
+    <meta name="keywords" content="Fashion Finesse Shop" />
+    <meta name="author" content="Raghad" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="dist/style.css"> -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Fashion Finesse Shop</title>
+  </head>
+  <body>
+    <header id="header">
+      <!-- navbar starts here -->
+      <nav id="navbar" role="navigation" aria-label="Main Navigation">
+        <img
+          class="logo"
+          src="images/Fashion Finesse Shop.webp"
+          alt="Fashion Finesse Shop logo"
+        />
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contactUs">Contact us</a></li>
+        </ul>
+      </nav>
+      <!-- navbar end  here -->
+    </header>
 
-        <footer>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#women">Women</a></li>
-            <li><a href="#men">Men</a></li>
-            <li><a href="#aboutUs">About us</a></li>
-            <li><a href="#contactUs">Contact us</a></li>
-          </ul>
-          <br>
-          <a href ="https://twitter.com" target="-blank">
-          <img src = "twitter.png" alt="twitter logo" width = "30" height ="30"></a>
-          <a href ="https://www.linkedin.com" target="-blank">
-          <img src = "linkedin.png"  alt="linkedin logo"  width ="30" height ="30"></a>
-        </footer>
-</body>
+    <!-- main starts  here -->
+    <main id="home">
+      <div class="hero__image">
+        <div class="hero__text">
+          <h1 class="text__title">Welcome to Fashion Finesse Shop&#128155;</h1>
+          <h2 class="text__subtitle">Find your true style here</h2>
+          <button aria-describedby="Shop Now">Shop Now</button>
+        </div>
+      </div>
+    </main>
+    <!-- main end  here -->
+
+    <!-- products starts here -->
+    <section id="products">
+      <h2 class="trending">Now Trending</h2>
+      <div class="products-continer">
+        <!-- first product  -->
+        <div class="card">
+          <div class="product__image img-one"></div>
+          <div class="content">
+            <h3 class="product__name">Cotton Jeans</h3>
+            <p class="product__description">
+              Wear them your way and make sure you bring your uniqueness to the
+              fore.
+            </p>
+            <p class="product__price">$90.00</p>
+            <button aria-describedby="Add to Cart">Add to Cart</button>
+          </div>
+        </div>
+        <!-- second product  -->
+        <div class="card">
+          <div class="product__image img-two"></div>
+          <div class="content">
+            <h3 class="product__name">White Oversize Tshirt</h3>
+            <p class="product__description">
+              this casual t-shirt is an absolute must-have for a big and tall
+              man's wardrobe.
+            </p>
+            <p class="product__price">$70.00</p>
+            <button aria-describedby="Add to Cart">Add to Cart</button>
+          </div>
+        </div>
+        <!-- third product  -->
+        <div class="card">
+          <div class="product__image img-three"></div>
+          <div class="content">
+            <h3 class="product__name">jeans high waist</h3>
+            <p class="product__description">
+              Constructed in a nonstretch, soft denim, with an authentic vintage
+              texture that becomes more unique.
+            </p>
+            <p class="product__price">$100.00</p>
+            <button aria-describedby="Add to Cart">Add to Cart</button>
+          </div>
+        </div>
+        <!-- fourth product  -->
+        <div class="card">
+          <div class="product__image img-four"></div>
+          <div class="content">
+            <h3 class="product__name">blue Oversize Tshirt</h3>
+            <p class="product__description">
+              Oversized shirts are real streetwear icons, and this shirt comes
+              across as quite simple and classic.
+            </p>
+            <p class="product__price">$60.00</p>
+            <button aria-describedby="Add to Cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- products end here -->
+
+    <!--testimonials starts here -->
+    <section id="testimonials">
+      <div class="testimonial-heading">
+        <span>Testimonials</span>
+        <h2>Customer</h2>
+      </div>
+      <div class="testimonial-box-container">
+        <!-- BOX1 -->
+        <div class="testimonial-box">
+          <div class="box-top">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="images/profile rakan.webp" alt="profile imge" />
+              </div>
+              <div class="name-user">
+                <strong>rakan</strong>
+                <span>@rakan11</span>
+              </div>
+            </div>
+            <div class="reviews">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i
+              ><!--Empty star-->
+            </div>
+          </div>
+          <div class="client-comment">
+            <p>
+              The Fashion Finesse shop is a hidden gem! They offer a wide range
+              of trendy and fashionable clothing at affordable prices. I've
+              purchased several items from them and have always been impressed
+              with the quality and style.
+            </p>
+          </div>
+        </div>
+        <!-- BOX2 -->
+        <div class="testimonial-box">
+          <div class="box-top">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="images/profile rahaf.webp" alt="profile imge" />
+              </div>
+              <div class="name-user">
+                <strong>rahaf</strong>
+                <span>@rahaf22</span>
+              </div>
+            </div>
+            <div class="reviews">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i
+              ><!--Empty star-->
+            </div>
+          </div>
+          <div class="client-comment">
+            <p>
+              I love shopping at this online Fashion Finesse shop! The quality
+              of their clothing is exceptional and their customer service is
+              top-notch. Every time I place an order, it arrives on time and
+              beautifully packaged. I highly recommend this shop to anyone
+              looking for stylish and high-quality clothing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  testimonials end here -->
+
+    <!-- newsletter subscription starts here -->
+    <section id="contactUs">
+      <form>
+        <div class="container">
+          <p class="form__title">Newsletter</p>
+          <input type="text" placeholder="Name" name="name" required />
+          <input
+            type="text"
+            placeholder="Email address"
+            name="mail"
+            required
+            autocomplete="email"
+            autocapitalize="off"
+            autocorrect="off"
+            spellcheck="false"
+          />
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe" /> Daily
+            Newsletter
+          </label>
+          <div class="btn__submit">
+            <button type="submit">Subscribe</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <!-- newsletter subscription end here  -->
+
+    <!-- footer starts here  -->
+    <footer>
+      <div class="footer__container">
+        <!-- footer nav -->
+        <div class="footer__nav">
+          <p class="footer__title">Useful pages</p>
+          <a href="#">Home</a>
+          <a href="#products">Products</a>
+          <a href="#contactUs">Contact us</a>
+        </div>
+        <!-- contact us -->
+        <div class="contact__us">
+          <p class="footer__title">Contact us</p>
+          <p>Phone: 555-5555</p>
+          <div class="social__icons">
+            <a href="https://twitter.com/" aria-label="Twitter" target="_blank"
+              ><i class="fa-brands fa-square-x-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/"
+              aria-label="linkedin"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- copyright  -->
+      <div class="copyright">
+        <p>copyright © Raghad.</p>
+      </div>
+    </footer>
+    <!-- footer end here -->
+  </body>
 </html>
